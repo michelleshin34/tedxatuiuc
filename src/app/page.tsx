@@ -1,103 +1,119 @@
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className="flex flex-col min-h-screen">
+      {/* Hero Section */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden text-white">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
+          src="/tedx-bg.4a85bf2f.png"
+          alt="TEDxUIUC event"
+          fill
+          className="object-cover object-center"
           priority
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="absolute inset-0 bg-black/60 md:bg-black/50 z-[1]" />
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-bold">TEDxUIUC: Roots and Routes</h1>
+          <p className="mt-4 bg-gray-500/70 inline-block px-4 py-2 rounded-md">April 13, 2025 • Spurlock Museum</p>
+          <div className="mt-6 flex justify-center gap-4">
+            <Link href="/tickets">
+              <button className="bg-red-600 text-white px-5 py-2 rounded-md hover:bg-red-700">Get Tickets</button>
+            </Link>
+            <Link href="/details">
+              <button className="bg-white text-black px-5 py-2 rounded-md hover:bg-gray-200">Details</button>
+            </Link>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* Welcome Section */}
+      <section className="py-12 md:py-16 bg-white text-center px-4">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Welcome to TEDxUIUC</h2>
+        <p className="max-w-2xl mx-auto text-gray-700">
+          TEDx is a global grassroots initiative, inspired by TED’s mission to share ‘ideas worth spreading.’
+          Locally organized events feature live speakers and TED Talks, fostering community conversations and innovation.
+          Over 3,000 events occur annually, independently organized under TED’s guidelines.
+        </p>
+        <Link href="/about" className="text-red-600 font-medium mt-4 inline-block hover:underline">
+          Learn more about TEDxUIUC →
+        </Link>
+      </section>
+
+      {/* Featured Speakers */}
+      <section className="py-12 md:py-16 bg-gray-50 text-center px-4">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-10">Featured Speakers</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {[1, 2, 3].map((i) => (
+            <div key={i} className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="font-bold">Speaker Name</h3>
+              <p className="text-gray-700">Talk Title Goes Here</p>
+              <p className="text-gray-500 text-sm mt-2">
+                Brief description of the speaker and their talk topic.
+              </p>
+              <Link href={`/speakers/${i}`} className="text-red-600 mt-4 inline-block hover:underline">
+                Learn more →
+              </Link>
+            </div>
+          ))}
+        </div>
+        <button className="mt-10 px-6 py-2 border border-gray-400 rounded-md hover:bg-gray-100">
+          View All Speakers
+        </button>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-red-600 text-white text-center px-4">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">Be Part of TEDxUIUC</h2>
+        <p className="max-w-xl mx-auto">
+          Join us as an attendee, volunteer, or sponsor to be part of this inspiring event.
+          Help us spread ideas worth sharing at the University of Illinois.
+        </p>
+        <div className="mt-6 flex justify-center gap-4">
+          <Link href="/tickets">
+            <button className="bg-white text-red-600 px-6 py-2 rounded-md hover:bg-gray-100">Get Tickets</button>
+          </Link>
+          <Link href="/join">
+            <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-900">Join Our Team</button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black text-white py-12">
+        <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-10">
+          <div>
+            <h3 className="font-bold mb-2">Quick Links</h3>
+            <ul className="space-y-1 text-sm">
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/speakers">Speakers</Link></li>
+              <li><Link href="/join">Join</Link></li>
+              <li><Link href="/details">Details</Link></li>
+              <li><Link href="/tickets">Tickets</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold mb-2">TEDxUIUC</h3>
+            <p className="text-sm max-w-sm">
+              A student-organized event bringing together the brightest minds to the University of Illinois Urbana-Champaign.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-bold mb-2">Contact</h3>
+            <p className="text-sm">help@tedxuiuc.com</p>
+            <div className="flex gap-3 mt-2">
+              <a href="https://twitter.com" aria-label="Twitter">🐦</a>
+              <a href="https://instagram.com" aria-label="Instagram">📸</a>
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 text-center text-xs text-gray-400">
+          © 2025 TEDxUIUC. All rights reserved.<br />
+          This independent TEDx event is operated under license from TED.
+        </div>
       </footer>
-    </div>
+    </main>
   );
 }
