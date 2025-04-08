@@ -1,6 +1,14 @@
-'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+
+type Speaker = {
+  id: number;
+  name: string;
+  title: string;
+  affiliation: string;
+  image: string;
+  bio: string;
+};
 
 const speakers = [
   {
