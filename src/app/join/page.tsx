@@ -1,7 +1,20 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function JoinPage() {
   return (
+    <>
+      {/* Hero Header Section */}
+        <section className="relative w-full h-[70vh] md:h-[80vh]">
+        <Image
+          src="/group.jpeg"
+          alt="TEDxUIUC Join Us Image"
+          fill
+          className="object-cover object-center z-0"
+          priority
+        />
+      </section>
+
     <main className="bg-black text-white px-6 py-16">
       {/* Page Intro */}
       <section className="text-center mb-12">
@@ -51,13 +64,13 @@ export default function JoinPage() {
         <p className="text-gray-400 mb-4">Get updates on recruitment, events, and speaker announcements.</p>
         <div className="flex justify-center gap-6 text-2xl">
           <Link href="https://instagram.com/tedxuiuc" target="_blank" aria-label="Instagram">
-            📸
+            <Image src="/icons/instagram.png" alt="Instagram" width={32} height={32} />
           </Link>
           <Link href="https://twitter.com/tedxuiuc" target="_blank" aria-label="Twitter">
-            🐦
+            <Image src="/icons/x.png" alt="Twitter" width={32} height={32} />
           </Link>
-          <Link href="https://linkedin.com/company/tedxuiuc" target="_blank" aria-label="LinkedIn">
-            💼
+          <Link href="https://linkedin.com/tedxuiuc" target="_blank" aria-label="LinkedIn">
+            <Image src="/icons/linkedin.png" alt="LinkedIn" width={32} height={32} />
           </Link>
         </div>
       </section>
@@ -68,5 +81,6 @@ export default function JoinPage() {
         <p className="text-gray-400">Stay tuned for announcements about recruitment events and info sessions!</p>
       </section>
     </main>
+    </>
   );
 }

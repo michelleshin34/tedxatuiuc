@@ -92,10 +92,10 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-neutral-900 text-white pt-12 pb-8 border-t border-red-600">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-12 md:gap-8">
           
           {/* About TEDxUIUC */}
-          <div>
+          <div className="flex-1">
             <h3 className="text-lg font-semibold mb-4 tracking-wide">About TEDxUIUC</h3>
             <p className="text-sm text-gray-400 leading-relaxed">
               TEDxUIUC is a student-led initiative that brings the spirit of TED to the University of Illinois Urbana-Champaign.
@@ -103,8 +103,8 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Quick Links - Split into two groups */}
-          <div>
+          {/* Quick Links */}
+          <div className="flex-1">
             <h3 className="text-lg font-semibold mb-4 tracking-wide">Quick Links</h3>
             <div className="grid grid-cols-2 gap-4 text-sm text-gray-400">
               <ul className="space-y-2">
@@ -121,13 +121,19 @@ export default function Home() {
           </div>
 
           {/* Contact / Social */}
-          <div>
+          <div className="flex-1">
             <h3 className="text-lg font-semibold mb-4 tracking-wide">Connect With Us</h3>
-            <p className="text-sm text-gray-400 mb-2">help@tedxuiuc.com</p>
-            <div className="flex items-center gap-4 text-xl">
-              <a href="https://twitter.com" target="_blank" aria-label="Twitter" className="hover:text-red-500 transition">🐦</a>
-              <a href="https://instagram.com" target="_blank" aria-label="Instagram" className="hover:text-red-500 transition">📸</a>
-              <a href="https://linkedin.com/company/tedxuiuc" target="_blank" aria-label="LinkedIn" className="hover:text-red-500 transition">💼</a>
+            <p className="text-sm text-gray-400 mb-2">tedxuiuc@gmail.com</p>
+            <div className="flex items-center gap-4">
+              <Link href="https://instagram.com/tedxuiuc" target="_blank" aria-label="Instagram">
+                <Image src="/icons/instagram.png" alt="Instagram" width={24} height={24} />
+              </Link>
+              <Link href="https://twitter.com/tedxuiuc" target="_blank" aria-label="Twitter">
+                <Image src="/icons/x.png" alt="Twitter" width={24} height={24} />
+              </Link>
+              <Link href="https://linkedin.com/company/tedxuiuc" target="_blank" aria-label="LinkedIn">
+                <Image src="/icons/linkedin.png" alt="LinkedIn" width={24} height={24} />
+              </Link>
             </div>
           </div>
         </div>
@@ -138,7 +144,6 @@ export default function Home() {
           This independent TEDx event is operated under license from TED.
         </div>
       </footer>
-
 
     </main>
   );

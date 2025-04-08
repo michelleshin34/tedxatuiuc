@@ -8,7 +8,7 @@ export default function DetailsPage() {
     <section className="relative w-full h-[70vh] md:h-[80vh]">
       <Image
         src="/jeremy-bishop-EwKXn5CapA4-unsplash-grayscale.jpg"
-        alt="TEDxUIUC Header Image"
+        alt="TEDxUIUC Speaker Image"
         fill
         className="object-cover object-center z-0"
         priority
