@@ -35,35 +35,39 @@ export default function DetailsPage() {
     </section>
 
     <main className="bg-black text-white px-6 py-16">
-      {/* Location */}
-      <section className="max-w-5xl mx-auto mb-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div>
-          <h2 className="text-2xl font-semibold mb-2">Location</h2>
-          <p className="text-gray-300 mb-2">Spurlock Museum</p>
-          <p className="text-gray-400 mb-4">
-            600 S Gregory St, Urbana, IL 61801<br />
-            The beautiful Spurlock Museum will host our 2025 TEDx event — a perfect setting for an afternoon of
-            thought-provoking talks and community connection.
-          </p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.450996779548!2d-88.22017602435005!3d40.10669077148076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd73cb07a9d15%3A0xa2054066cb1c22e0!2sSpurlock%20Museum!5e0!3m2!1sen!2sus!4v1712464047536!5m2!1sen!2sus"
-            width="100%"
-            height="250"
-            className="rounded-md border-0"
-            loading="lazy"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div>
-          <Image
-            src="/spurlock.png"
-            alt="Spurlock Museum"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-lg object-cover w-full h-auto"
-          />
-        </div>
-      </section>
+    {/* Location */}
+    <section className="max-w-6xl mx-auto mb-16 grid grid-cols-1 md:grid-cols-5 gap-10 items-center">
+      {/* Text + Map */}
+      <div className="md:col-span-2">
+        <h2 className="text-2xl font-semibold mb-2">Location</h2>
+        <p className="text-gray-300 mb-2">Spurlock Museum</p>
+        <p className="text-gray-400 mb-4">
+          600 S Gregory St, Urbana, IL 61801<br />
+          The beautiful Spurlock Museum will host our 2025 TEDx event — a perfect setting for an afternoon of
+          thought-provoking talks and community connection.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.450996779548!2d-88.22017602435005!3d40.10669077148076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880cd73cb07a9d15%3A0xa2054066cb1c22e0!2sSpurlock%20Museum!5e0!3m2!1sen!2sus!4v1712464047536!5m2!1sen!2sus"
+          width="100%"
+          height="250"
+          className="rounded-md border-0"
+          loading="lazy"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      {/* Spurlock Image */}
+      <div className="md:col-span-3">
+        <Image
+          src="/spurlock.png"
+          alt="Spurlock Museum"
+          width={900}
+          height={600}
+          className="rounded-lg shadow-lg object-cover w-full h-auto"
+        />
+      </div>
+    </section>
+
 
       {/* iVenture Partnership */}
       <section className="text-center py-20 bg-black px-6 md:px-12 border-t border-neutral-800">
@@ -96,12 +100,12 @@ export default function DetailsPage() {
           <div className="flex flex-col items-center text-center">
             <Image
               src="/speakers/Manu.png"
-              alt="Manu"
+              alt="Manu Edakara"
               width={160}
               height={160}
               className="rounded-full object-cover mb-4"
             />
-            <h3 className="text-lg font-bold">Manu</h3>
+            <h3 className="text-lg font-bold">Manu Edakara</h3>
             <p className="text-sm text-gray-400 mb-2 text-center">
               Rolling the Dice on Humanity
             </p>
@@ -157,16 +161,17 @@ export default function DetailsPage() {
             </p>
           </div>
 
-
-          {/* Russell */}
+           {/* Russell */}
           <div className="flex flex-col items-center text-center">
-            <Image
-              src="/speakers/Dr-Wigginton.png"
-              alt="Russell Wigginton"
-              width={160}
-              height={160}
-              className="rounded-full object-cover mb-4"
-            />
+            <div className="w-40 h-40 mb-4 rounded-full overflow-hidden">
+              <Image
+                src="/speakers/Dr-Wigginton.png"
+                alt="Russell Wigginton"
+                width={160}
+                height={160}
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
             <h3 className="text-lg font-bold">Russell Wigginton</h3>
             <p className="text-sm text-gray-400 mb-2 text-center">
               My Journey to the National Civil Rights Museum
