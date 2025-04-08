@@ -62,7 +62,7 @@ const speakers = [
 ];
 
 export default function SpeakersPage() {
-  const [activeSpeaker, setActiveSpeaker] = useState(null);
+  const [activeSpeaker, setActiveSpeaker] = useState<Speaker | null>(null);
 
   return (
     <main className="bg-black text-white px-6 py-16">
@@ -81,11 +81,12 @@ export default function SpeakersPage() {
             onClick={() => setActiveSpeaker(speaker)}
             className="bg-neutral-900 rounded-xl overflow-hidden cursor-pointer border border-transparent hover:border-white transition-all"
           >
-            <div className="w-full h-96 bg-gray-800">
-              <img
+            <div className="w-full h-96 bg-gray-800 relative">
+              <Image
                 src={speaker.image}
                 alt={speaker.name}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
             <div className="p-6">
@@ -107,15 +108,14 @@ export default function SpeakersPage() {
             className="bg-neutral-900 rounded-lg overflow-hidden max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
-          <div className="h-full w-full md:h-[36rem] md:max-h-[36rem]">
-            <Image
-              src={activeSpeaker.image}
-              alt={activeSpeaker.name}
-              width={800}
-              height={800}
-              className="w-full h-full object-cover"
-            />
-          </div>
+            <div className="h-full w-full md:h-[36rem] md:max-h-[36rem] relative">
+              <Image
+                src={activeSpeaker.image}
+                alt={activeSpeaker.name}
+                fill
+                className="object-cover"
+              />
+            </div>
 
             <div className="p-6 flex flex-col justify-center">
               <h3 className="text-2xl font-bold mb-1">{activeSpeaker.name}</h3>
