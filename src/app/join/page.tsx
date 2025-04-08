@@ -33,35 +33,35 @@ export default function JoinPage() {
             <div className="bg-neutral-900 p-6 rounded-md shadow-md">
               <h3 className="text-lg font-semibold mb-2 text-red-400">Marketing</h3>
               <p className="text-gray-300 text-sm">
-                Craft the story of TEDxUIUC. As a marketing team member, you'll create campaigns, design graphics, and shape the public image of our conference across campus and beyond.
+                Craft the story of TEDxUIUC. As a marketing team member, you&apos;ll create campaigns, design graphics, and shape the public image of our conference across campus and beyond.
               </p>
             </div>
             {/* Social Media */}
             <div className="bg-neutral-900 p-6 rounded-md shadow-md">
               <h3 className="text-lg font-semibold mb-2 text-red-400">Social Media</h3>
               <p className="text-gray-300 text-sm">
-                From Instagram posts to TikToks and everything in between, you'll manage our online presence and connect with our audience through creative, consistent content.
+                From Instagram posts to TikToks and everything in between, you&apos;ll manage our online presence and connect with our audience through creative, consistent content.
               </p>
             </div>
             {/* Finance */}
             <div className="bg-neutral-900 p-6 rounded-md shadow-md">
               <h3 className="text-lg font-semibold mb-2 text-red-400">Finance</h3>
               <p className="text-gray-300 text-sm">
-                Keep TEDxUIUC running behind the scenes. You'll manage budgets, track expenses, and work with sponsors to make sure every dollar helps build something impactful.
+                Keep TEDxUIUC running behind the scenes. You&apos;ll manage budgets, track expenses, and work with sponsors to make sure every dollar helps build something impactful.
               </p>
             </div>
             {/* Event Planning & Logistics */}
             <div className="bg-neutral-900 p-6 rounded-md shadow-md">
               <h3 className="text-lg font-semibold mb-2 text-red-400">Event Planning and Logistics</h3>
               <p className="text-gray-300 text-sm">
-                Make the magic happen. You'll handle everything from venue coordination to day-of execution—turning big ideas into seamless, memorable experiences.
+                Make the magic happen. You&apos;ll handle everything from venue coordination to day-of execution—turning big ideas into seamless, memorable experiences.
               </p>
             </div>
             {/* Curation */}
             <div className="bg-neutral-900 p-6 rounded-md shadow-md">
               <h3 className="text-lg font-semibold mb-2 text-red-400">Curation</h3>
               <p className="text-gray-300 text-sm">
-                Shape the soul of TEDxUIUC. You'll help discover, develop, and coach speakers, ensuring their ideas are powerful, authentic, and stage-ready.
+                Shape the soul of TEDxUIUC. You&apos;ll help discover, develop, and coach speakers, ensuring their ideas are powerful, authentic, and stage-ready.
               </p>
             </div>
             {/* Membership */}
