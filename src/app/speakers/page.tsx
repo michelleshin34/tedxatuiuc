@@ -14,10 +14,10 @@ type Speaker = {
 const speakers = [
   {
     id: 1,
-    name: 'Manu',
+    name: 'Manu Edakara',
     title: '“Rolling the Dice on Humanity”',
     affiliation: 'Entrepreneur · Gies · Computer Science · Anthropology',
-    image: '/speakers/manu.png',
+    image: '/speakers/Manu.png',
     bio: `Manu Edakara is the Director of the award-winning iVenture Accelerator, the educational entrepreneurship program for top student startups at the University of Illinois System. Overseeing a portfolio of 150+ startups, nonprofits, and socio-cultural initiatives, Manu has spearheaded ventures that raised $160M+, generated $1 billion in enterprise value, and created over 1,000 full-time jobs. His entrepreneurship center has multiple programs, courses, organizations, and events that serve 1000s of stakeholders annually. Under Manu's leadership, iVenture provides unparalleled experiential learning, taking students beyond traditional academics into real-world applications. Notably, 42% of iVenture’s founders are women, 23% come from underrepresented backgrounds, and nearly one-third are international and emphasize social impact. His passion for innovation stems from a deep desire to prepare young innovators working on the big problems of the future. For his pioneering work, Manu has been named to the Forbes 30 under 30 list and is the youngest Distinguished Alumnus of the University of Illinois College of Applied Health Sciences.`,
   },
   {
