@@ -29,16 +29,16 @@ export default function WhoPage() {
           <h2 className="text-2xl font-semibold mb-2">What is TED?</h2>
           <p className="text-gray-300">
             TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago,
-            TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers
+            TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world&apos;s leading thinkers
             and doers to speak for 18 minutes or less.
           </p>
         </div>
         <div className="bg-neutral-900 p-6 rounded-xl shadow-sm">
           <h2 className="text-2xl font-semibold mb-2">What is TEDx?</h2>
           <p className="text-gray-300">
-            TEDx is a global grassroots initiative, inspired by TED's mission to share 'ideas worth spreading.' Locally organized events feature
+            TEDx is a global grassroots initiative, inspired by TED&apos;s mission to share &apos;ideas worth spreading.&apos; Locally organized events feature
             live speakers and TED Talks, fostering community conversations and innovation. Over 3,000 events occur annually, independently organized
-            under TED's guidelines.
+            under TED&apos;s guidelines.
           </p>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function WhoPage() {
         <h2 className="text-3xl font-semibold mb-4">Our History</h2>
         <p className="text-gray-300 mb-4">
           TEDxUIUC was founded by a group of passionate students who wanted to bring the TEDx experience to the University of Illinois campus.
-          Since then, we've hosted various successful events featuring speakers from various disciplines and backgrounds.
+          Since then, we&apos;ve hosted various successful events featuring speakers from various disciplines and backgrounds.
         </p>
         <p className="text-gray-300">
           Our events have covered topics ranging from cutting-edge technology and scientific breakthroughs to social innovation and artistic expression,

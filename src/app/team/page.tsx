@@ -6,7 +6,7 @@ export default function TeamPage() {
       <section className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet the TEDxUIUC Team</h1>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          We're a team of passionate students dedicated to bringing TED's mission of "Ideas Worth Spreading" to the University of Illinois Urbana-Champaign.
+          Were a team of passionate students dedicated to bringing TED&apos;s mission of "Ideas Worth Spreading" to the University of Illinois Urbana-Champaign.
         </p>
       </section>
 

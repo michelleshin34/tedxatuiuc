@@ -17,7 +17,7 @@ export default function DetailsPage() {
       <div className="relative z-20 flex flex-col items-center justify-center text-center h-full px-6">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">TEDxUIUC 2025: Roots and Routes</h1>
         <p className="text-gray-300 max-w-2xl text-base md:text-lg">
-          Here's everything you need to know to attend TEDxUIUC 2025.
+          Here&apos;s everything you need to know to attend TEDxUIUC 2025.
         </p>
       </div>
     </section>
@@ -27,7 +27,7 @@ export default function DetailsPage() {
       <div className="max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">Our Theme</h2>
         <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-          <span className="font-medium text-white">TEDxUIUC Roots and Routes</span> examines the tension between where we start and where we're headed! <br />
+          <span className="font-medium text-white">TEDxUIUC Roots and Routes</span> examines the tension between where we start and where we&apos;re headed! <br />
           Join us on <span className="text-red-400 font-semibold">Sunday, April 13 · 6:30PM–9:00PM</span> to hear inspiring talks and fresh perspectives on <br />
           identity, movement, and change.
         </p>
@@ -70,7 +70,7 @@ export default function DetailsPage() {
         <div className="max-w-3xl mx-auto mb-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">In Partnership with iVenture Accelerator</h2>
           <p className="text-gray-300 text-sm md:text-base">
-            TEDxUIUC is proud to partner with <span className="text-red-400 font-semibold">iVenture Accelerator</span>, a University of Illinois initiative that supports student-led startups and social ventures. Together, we're empowering changemakers to spread impactful ideas and create real-world solutions.
+            TEDxUIUC is proud to partner with <span className="text-red-400 font-semibold">iVenture Accelerator</span>, a University of Illinois initiative that supports student-led startups and social ventures. Together, we&apos;re empowering changemakers to spread impactful ideas and create real-world solutions.
           </p>
         </div>
 
@@ -192,7 +192,7 @@ export default function DetailsPage() {
       <section className="text-center mb-12">
         <h2 className="text-2xl font-semibold mb-6">Thank You to Our Sponsors</h2>
         <p className="text-gray-300 mb-6 max-w-xl mx-auto">
-          Our event wouldn't be possible without the support of our incredible sponsors. Thank you for believing in our mission and helping us bring TEDxUIUC to life.
+          Our event wouldn&apos;t be possible without the support of our incredible sponsors. Thank you for believing in our mission and helping us bring TEDxUIUC to life.
         </p>
         <div className="flex flex-wrap justify-center gap-8 items-center">
           {/* Example logos — add more or swap as needed */}
