@@ -1,12 +1,10 @@
-import Link from 'next/link';
-
 export default function TeamPage() {
   return (
     <main className="bg-black text-white px-6 py-16">
       <section className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet the TEDxUIUC Team</h1>
         <p className="text-gray-300 max-w-2xl mx-auto">
-          Were a team of passionate students dedicated to bringing TED&apos;s mission of "Ideas Worth Spreading" to the University of Illinois Urbana-Champaign.
+          Were a team of passionate students dedicated to bringing TED&apos;s mission of &quot;Ideas Worth Spreading&quot; to the University of Illinois Urbana-Champaign.
         </p>
       </section>
 
