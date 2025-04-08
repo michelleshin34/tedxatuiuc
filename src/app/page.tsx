@@ -58,7 +58,7 @@ export default function Home() {
             height={60}
           />
           <Image
-            src="/sponsors/molex.jpg"
+            src="/sponsors/molex.png"
             alt="Sponsor 2"
             width={250}
             height={60}
