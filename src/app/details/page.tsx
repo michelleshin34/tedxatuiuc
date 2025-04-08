@@ -202,7 +202,7 @@ export default function DetailsPage() {
         <div className="flex flex-wrap justify-center gap-8 items-center">
           {/* Example logos — add more or swap as needed */}
           <img src="/sponsors/here.png" alt="Sponsor 1" className="h-10" />
-          <img src="/sponsors/molex.jpg" alt="Sponsor 2" className="h-12" />
+          <img src="/sponsors/molex.png" alt="Sponsor 2" className="h-12" />
           <img src="/sponsors/sandf.jpg" alt="Sponsor 2" className="h-12" />
         </div>
       </section>
