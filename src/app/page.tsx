@@ -5,18 +5,25 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden text-white">
+      <section className="relative w-full h-screen">
         <Image
           src="/jeremy-bishop-EwKXn5CapA4-unsplash-grayscale.jpg"
           alt="TEDxUIUC event"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center z-0"
           priority
         />
-        <div className="absolute inset-0 bg-black/60 md:bg-black/50 z-[1]" />
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold">TEDxUIUC: Roots and Routes</h1>
-          <p className="mt-4 bg-gray-700/70 inline-block px-4 py-2 rounded-md">April 13, 2025 • Spurlock Museum</p>
+        <div className="absolute inset-0 bg-black/60 md:bg-black/50 z-10" />
+        <div className="relative z-20 flex flex-col justify-center items-center h-full text-center px-4 text-white">
+          <h1
+            className="text-4xl md:text-9xl font-bold"
+            style={{ fontFamily: 'Seawave-Alt' }}
+          >
+            TEDxUIUC: ROOTS AND ROUTES
+          </h1>
+          <p className="mt-4 bg-gray-700/70 inline-block px-4 py-2 rounded-md">
+            April 13, 2025 • Spurlock Museum
+          </p>
           <div className="mt-6 flex justify-center gap-4">
             <Link href="/tickets">
               <button className="bg-red-600 text-white px-5 py-2 rounded-md hover:bg-red-700 cursor-pointer">Get Tickets</button>
@@ -27,6 +34,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       
 
       {/* Welcome Section */}
@@ -50,22 +58,27 @@ export default function Home() {
         </p>
 
         <div className="flex flex-wrap justify-center items-center gap-10 max-w-5xl mx-auto">
-          {/* Replace these logos with real sponsor images */}
           <Image
             src="/sponsors/here.png"
-            alt="Sponsor 1"
+            alt="HERE apartments"
             width={250}
             height={60}
           />
           <Image
             src="/sponsors/molex.png"
-            alt="Sponsor 2"
+            alt="Molex"
             width={250}
             height={60}
           />
           <Image
             src="/sponsors/sandf.jpg"
-            alt="Sponsor 3"
+            alt="Stowell and Friedman"
+            width={250}
+            height={60}
+          />
+          <Image
+            src="/sponsors/BrewLab.png"
+            alt="BrewLab"
             width={250}
             height={60}
           />

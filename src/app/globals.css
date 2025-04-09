@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+/* Sub Header */
+
+@font-face {
+  font-family: 'MIXONE';
+  src: url('/fonts/MIXONE.ttf') format('truetype');
+}
+
+/* Descriptive Text */
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Sinhala Sangam MN';
+  src: url('/fonts/sinhala-sangam-mn.ttf') format('truetype');
+}
+
+/* Big Header */
+
+@font-face {
+  font-family: 'Seawave-Alt';
+  src: url('/fonts/NT-SEAWAVE-alt.otf') format('opentype');
+  font-weight: snormal;
+  font-style: normal;
+}
+
 :root {
   --background: #0a0a0a;     /* dark background */
   --foreground: #ededed;     /* light text */
@@ -11,6 +40,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
 /*
 @media (prefers-color-scheme: light) {
   :root {
@@ -23,5 +53,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Light', sans-serif;
 }
