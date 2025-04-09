@@ -15,7 +15,12 @@ export default function DetailsPage() {
       />
       <div className="absolute inset-0 bg-black/60 z-10" />
       <div className="relative z-20 flex flex-col items-center justify-center text-center h-full px-6">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">TEDxUIUC 2025: Roots and Routes</h1>
+          <h1
+            className="text-4xl md:text-9xl font-bold"
+            style={{ fontFamily: 'Seawave-Alt' }}
+          >
+            TEDxUIUC: ROOTS AND ROUTES
+          </h1>
         <p className="text-gray-300 max-w-2xl text-base md:text-lg">
           Here&apos;s everything you need to know to attend TEDxUIUC 2025.
         </p>
@@ -199,12 +204,32 @@ export default function DetailsPage() {
         <p className="text-gray-300 mb-6 max-w-xl mx-auto">
           Our event wouldn&apos;t be possible without the support of our incredible sponsors. Thank you for believing in our mission and helping us bring TEDxUIUC to life.
         </p>
-        <div className="flex flex-wrap justify-center gap-8 items-center">
-          {/* Example logos — add more or swap as needed */}
-          <img src="/sponsors/here.png" alt="Sponsor 1" className="h-10" />
-          <img src="/sponsors/molex.png" alt="Sponsor 2" className="h-12" />
-          <img src="/sponsors/sandf.jpg" alt="Sponsor 2" className="h-12" />
-        </div>
+        <div className="flex flex-wrap justify-center items-center gap-10 max-w-5xl mx-auto">
+          <Image
+            src="/sponsors/here.png"
+            alt="HERE apartments"
+            width={250}
+            height={60}
+          />
+          <Image
+            src="/sponsors/molex.png"
+            alt="Molex"
+            width={250}
+            height={60}
+          />
+          <Image
+            src="/sponsors/sandf.jpg"
+            alt="Stowell and Friedman"
+            width={250}
+            height={60}
+          />
+          <Image
+            src="/sponsors/BrewLab.png"
+            alt="BrewLab"
+            width={250}
+            height={60}
+          />
+          </div>
       </section>
     </main>
     </>
