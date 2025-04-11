@@ -23,7 +23,7 @@ const speakers = [
   {
     id: 2,
     name: 'Christopher LeMark',
-    title: '“How to Turn Your Struggles Into Your Passion”',
+    title: '“A Beautiful Mess”',
     affiliation: 'Mental Health Advocate · Psychology · Business · Humanities',
     image: '/speakers/Christopher-LeMark.jpg',
     bio: `Christopher LeMark is a speaker, artist, and mental health advocate who transforms personal pain into purposeful work. Raised on the South Side of Chicago and shaped by childhood trauma, Christopher turned his healing journey into a mission to help others find language for their struggles and courage to seek support.
@@ -67,7 +67,7 @@ export default function SpeakersPage() {
   return (
     <main className="bg-black text-white px-6 py-16">
       <section className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Speakers</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">MEET OUR SPEAKERS</h1>
         <p className="text-gray-300 max-w-2xl mx-auto">
           Discover the brilliant minds taking the TEDxUIUC stage. Each speaker brings unique insight, passion, and innovation.
         </p>

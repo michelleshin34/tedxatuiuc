@@ -39,11 +39,11 @@ export default function Home() {
 
       {/* Welcome Section */}
       <section className="py-12 md:py-16 bg-black text-center px-4">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4">Welcome to TEDxUIUC</h2>
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4">WELCOME TO TEDxUIUC</h2>
         <p className="max-w-2xl mx-auto text-gray-300">
-          TEDx is a global grassroots initiative, inspired by TED’s mission to share ‘ideas worth spreading.’
+          TEDx is a global grassroots initiative, inspired by TED&apos;s mission to share &apos;ideas worth spreading.&apos;
           Locally organized events feature live speakers and TED Talks, fostering community conversations and innovation.
-          Over 3,000 events occur annually, independently organized under TED’s guidelines.
+          Over 3,000 events occur annually, independently organized under TED&apos;s guidelines.
         </p>
         <Link href="/who" className="text-red-400 font-medium mt-4 inline-block hover:underline">
           Learn more about TEDxUIUC →
@@ -94,9 +94,6 @@ export default function Home() {
           Help us spread ideas worth sharing at the University of Illinois.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <Link href="/tickets">
-            <button className="bg-white text-red-600 px-6 py-2 rounded-md hover:bg-gray-100 cursor-pointer">Get Tickets</button>
-          </Link>
           <Link href="/join">
             <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-900 cursor-pointer">Join Our Team</button>
           </Link>
