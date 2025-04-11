@@ -18,7 +18,7 @@ export default function WhoPage() {
       <main className="bg-black text-white px-6 py-16">
         {/* Intro Section */}
         <section className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Who We Are at TEDxUIUC</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">WHO WE ARE AT TEDxUIUC</h1>
           <p className="text-gray-300 text-lg">
             Discover the story behind TEDxUIUC and our mission to bring ideas worth spreading to the University of Illinois community.
           </p>

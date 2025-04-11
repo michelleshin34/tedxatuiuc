@@ -127,7 +127,7 @@ export default function DetailsPage() {
             />
             <h3 className="text-lg font-bold">Christopher LeMark</h3>
             <p className="text-sm text-gray-400 mb-2 text-center">
-              How to Turn Your Struggles Into Passion
+              A Beautiful Mess
             </p>
           </div>
 
@@ -142,7 +142,7 @@ export default function DetailsPage() {
             />
             <h3 className="text-lg font-bold">Elisabeth Pollock</h3>
             <p className="text-sm text-gray-400 mb-2 text-center">
-              Inside the System, Against the Odds
+              Inside the System, Against the Odds: The Case for Public Defenders
             </p>
           </div>
         </div>
@@ -162,7 +162,7 @@ export default function DetailsPage() {
             </div>
             <h3 className="text-lg font-bold">Terry Henderson</h3>
             <p className="text-sm text-gray-400 mb-2 text-center">
-              Who Gets to Make Music?
+             Who Gets to Make Music? Reimagining Inclusion from Start to Studio
             </p>
           </div>
 
