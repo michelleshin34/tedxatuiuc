@@ -14,19 +14,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="bg-black text-white scroll">
         {/* AppBar */}
         <nav className="sticky top-0 z-30 bg-black shadow-sm backdrop-blur-sm border-b border-red-600">
-          <div className="w-full px-20 py-5 flex justify-between items-center">
+          <div className="w-full px-6 md:px-20 py-5 flex justify-between items-center">
             {/* Logo */}
             <div className="flex-1">
               <Link href="/" className="flex items-center">
                 <img
                   src="/logo-white.png"
                   alt="TEDxUIUC logo"
-                  className="h-10 w-auto"
+                  className="h-8 md:h-10 w-auto"
                 />
               </Link>
             </div>
